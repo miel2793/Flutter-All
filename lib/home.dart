@@ -14,15 +14,149 @@ class Home extends StatelessWidget {
         
       ),
       body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
 
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
+            
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: SizedBox(
+                height: 60,
+                width: 1000,
+                child: Row(
+                  mainAxisAlignment:  MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Sifat akon"),
+                    Text("Sifat akon"),
+                    Text("Sifat akon"),
+                    Text("Sifat akon"),
+                    Text("Sifat akon"),
+                    Text("Sifat akon"),
+                    Text("Sifat akon"),
+                    Text("Sifat akon"),
+                    Text("Sifat akon"),
+                    Text("Hellow World ",style: TextStyle(
+                        fontSize: 54,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.purple[200]
+                    ),),
+
+                  ],
+                ),
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+
+                Text("Hellow World ",style: TextStyle(
+                    fontSize: 54,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple[200]
+                ),),
+
+
+
+
+
+
+
+              ],
+            ),
+          ],
+        ),
+
+       /* child: SingleChildScrollView(
+
+          child:
+
+
+          Row(
             mainAxisAlignment: MainAxisAlignment.end,
              children: [
                Text("Miel"),
                Text("Miel"),
-               Text("Miel"),
+               Text("alif"),
                Text("Miel"),
                Text("Miel"),
                Text("Miel"),
@@ -37,7 +171,7 @@ class Home extends StatelessWidget {
 
              ],
           ),
-        )
+        )*/
 
        /* Column(
           mainAxisAlignment: MainAxisAlignment.center,
