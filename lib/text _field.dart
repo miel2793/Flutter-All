@@ -7,7 +7,7 @@ class Textfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(onPressed: (){}),
-       backgroundColor: Colors.amber,
+       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("TextField & Input"),
         backgroundColor: Colors.cyan,
@@ -20,10 +20,11 @@ class Textfield extends StatelessWidget {
           child: TextField(
             cursorColor: Colors.pink,
             maxLength:11 ,
+             keyboardType: TextInputType.phone,
              decoration: InputDecoration(
-               labelText: 'Enter ',
+               labelText: 'Enter Your Phone Number  ',
                helperText: 'Enter correctly',
-               hintText: 'Enter Your Number',
+               hintText: '+880',
                 hintStyle: TextStyle(
                   color: Colors.black,
              //     background: Paint().Colors.
@@ -31,7 +32,16 @@ class Textfield extends StatelessWidget {
                 prefixIcon: Icon(Icons.phone),
  border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
-             )
+             ),
+                enabledBorder: OutlineInputBorder(
+                 borderSide: BorderSide(
+                   color: Colors.orange,
+                   width: 2
+                 )
+             ),
+               filled: true,
+               fillColor: Colors.orange[100],
+                // contentPadding: EdgeInsets.symmetric(horizontal: 5,vertical: 5)
 
              ),
           ),
