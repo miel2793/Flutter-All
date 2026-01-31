@@ -10,8 +10,14 @@ class Home extends StatelessWidget {
         title: Text("The App"),
         backgroundColor: Colors.cyan[700],
 
+
         
       ),
+      body: Text("Hellow World ",style: TextStyle(
+        fontSize: 54,
+        fontWeight: FontWeight.bold,
+        color: Colors.purpleAccent[600]
+      ),),
     );
   }
 }
