@@ -28,7 +28,17 @@ class Buttonicon extends StatelessWidget {
                         borderRadius: BorderRadius.circular(7),
                       )
                     ),
-                    onPressed: (){}, child: Text("Tap Here"))
+                    onPressed: (){}, child: Text("Tap Here")),
+
+                GestureDetector(
+
+                    onTap: () {
+                      print('hello');
+                    },
+                    onLongPress: () {
+                      print('hi');
+                    },
+                    child: Text("Tap Here"))
               ],
 
             ),
