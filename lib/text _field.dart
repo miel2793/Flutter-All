@@ -13,40 +13,80 @@ class Textfield extends StatelessWidget {
         backgroundColor: Colors.cyan,
       ),
 
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 50,horizontal: 5),
-          child: TextField(
-            cursorColor: Colors.pink,
-            maxLength:11 ,
-             keyboardType: TextInputType.phone,
-             decoration: InputDecoration(
-               labelText: 'Enter Your Phone Number  ',
-               helperText: 'Enter correctly',
-               hintText: '+880',
-                hintStyle: TextStyle(
-                  color: Colors.black,
-             //     background: Paint().Colors.
-                ),
-                prefixIcon: Icon(Icons.phone),
- border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(15),
-             ),
-                enabledBorder: OutlineInputBorder(
-                 borderSide: BorderSide(
-                   color: Colors.orange,
-                   width: 2
-                 )
-             ),
-               filled: true,
-               fillColor: Colors.orange[100],
-                // contentPadding: EdgeInsets.symmetric(horizontal: 5,vertical: 5)
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 5),
+              child: TextField(
+                cursorColor: Colors.pink,
+                maxLength:11 ,
+                 keyboardType: TextInputType.phone,
+                 decoration: InputDecoration(
+                   labelText: 'Enter Your Phone Number  ',
+                   helperText: 'Enter correctly',
+                   hintText: '+880',
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                 //     background: Paint().Colors.
+                    ),
+                    prefixIcon: Icon(Icons.phone),
+           border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                 ),
+                    enabledBorder: OutlineInputBorder(
+                     borderSide: BorderSide(
+                       color: Colors.orange,
+                       width: 2
+                     )
+                 ),
+                   filled: true,
+                   fillColor: Colors.orange[100],
+                    // contentPadding: EdgeInsets.symmetric(horizontal: 5,vertical: 5)
 
-             ),
+                 ),
+              ),
+            ),
           ),
-        ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 5),
+              child: TextField(
+                cursorColor: Colors.pink,
+             //   maxLength:11 ,
+               // keyboardType: TextInputType.phone,
+                decoration: InputDecoration(
+                  labelText: 'Enter Your Password  ',
+                  helperText: 'Enter correctly',
+                  hintText: 'Input a strong password',
+                  suffixIcon: Icon(Icons.remove_red_eye),
+                  hintStyle: TextStyle(
+                    color: Colors.black,
+                    //     background: Paint().Colors.
+                  ),
+                  prefixIcon: Icon(Icons.password_outlined),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                          color: Colors.orange,
+                          width: 2
+                      )
+                  ),
+                  filled: true,
+                  fillColor: Colors.orange[100],
+                  // contentPadding: EdgeInsets.symmetric(horizontal: 5,vertical: 5)
+
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
+
     );
   }
 }
