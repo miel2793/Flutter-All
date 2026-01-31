@@ -5,7 +5,11 @@ class Buttonicon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber.withOpacity(0.8),
+       floatingActionButton: FloatingActionButton(
+           backgroundColor: Colors.amber,
+           foregroundColor: Colors.black87,
+           onPressed: (){}),
+    //  backgroundColor: Colors.amber.withOpacity(0.8),
        appBar:AppBar(
          title: Text("Icon",style:
            TextStyle(
@@ -46,7 +50,9 @@ class Buttonicon extends StatelessWidget {
               children: [
                 OutlinedButton(onPressed: (){}, child: Text('Outloine')),
                 TextButton(onPressed: (){}, child: Text('Text....')),
-                Icon(Icons.adb_outlined)
+                Icon(Icons.adb_outlined),
+
+
 
               ],
             )
