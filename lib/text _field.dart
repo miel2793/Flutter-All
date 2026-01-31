@@ -19,13 +19,17 @@ class Textfield extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 50,horizontal: 5),
           child: TextField(
              decoration: InputDecoration(
+               labelText: 'Enter ',
+               helperText: 'Enter correctly',
                hintText: 'Enter Your Name',
                 hintStyle: TextStyle(
                   color: Colors.black,
              //     background: Paint().Colors.
                 ),
-                prefixIcon: Icon(Icons.phone)
-
+                prefixIcon: Icon(Icons.phone),
+ border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(15),
+             )
 
              ),
           ),
