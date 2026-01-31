@@ -18,10 +18,12 @@ class Textfield extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 50,horizontal: 5),
           child: TextField(
+            cursorColor: Colors.pink,
+            maxLength:11 ,
              decoration: InputDecoration(
                labelText: 'Enter ',
                helperText: 'Enter correctly',
-               hintText: 'Enter Your Name',
+               hintText: 'Enter Your Number',
                 hintStyle: TextStyle(
                   color: Colors.black,
              //     background: Paint().Colors.
