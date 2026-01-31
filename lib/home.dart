@@ -30,6 +30,49 @@ class Home extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Colors.purple[200]
           ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
         ],
       ),
     );
