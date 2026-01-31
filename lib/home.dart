@@ -13,11 +13,25 @@ class Home extends StatelessWidget {
 
         
       ),
-      body: Text("Hellow World ",style: TextStyle(
-        fontSize: 54,
-        fontWeight: FontWeight.bold,
-        color: Colors.purpleAccent[600]
-      ),),
+      body: Column(
+        children: [
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+          Text("Hellow World ",style: TextStyle(
+              fontSize: 54,
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200]
+          ),),
+        ],
+      ),
     );
   }
 }
