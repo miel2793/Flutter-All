@@ -61,7 +61,7 @@ class Textfield extends StatelessWidget {
                 controller: password,
                 obscureText: true,
                 cursorColor: Colors.pink,
-             //   maxLength:11 ,
+            minLines: 1,
                // keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
 
@@ -95,7 +95,14 @@ class Textfield extends StatelessWidget {
           SizedBox(
               height: 50,
               width: 200,
-              child: ElevatedButton(onPressed: (){}, child: Text("Log in")))
+              child: ElevatedButton(onPressed: (){
+
+                print(" Name iS :${phone.text}");
+                print("Password is:${password.text}");
+                phone.clear();
+                password.clear();
+
+              }, child: Text("Log in")))
         ],
       ),
 
