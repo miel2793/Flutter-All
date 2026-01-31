@@ -6,10 +6,31 @@ class Textfield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed: (){}),
+       backgroundColor: Colors.amber,
       appBar: AppBar(
         title: Text("TextField & Input"),
+        backgroundColor: Colors.cyan,
       ),
-      
+
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 50,horizontal: 5),
+          child: TextField(
+             decoration: InputDecoration(
+               hintText: 'Enter Your Name',
+                hintStyle: TextStyle(
+                  color: Colors.black,
+             //     background: Paint().Colors.
+                ),
+                prefixIcon: Icon(Icons.phone)
+
+
+             ),
+          ),
+        ),
+      ),
     );
   }
 }
