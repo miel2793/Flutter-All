@@ -5,6 +5,9 @@ class Textfield extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    TextEditingController  phone =TextEditingController();
+    TextEditingController password =TextEditingController();
     return Scaffold(
       floatingActionButton: FloatingActionButton(onPressed: (){}),
        backgroundColor: Colors.white,
@@ -20,6 +23,7 @@ class Textfield extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 5),
               child: TextField(
+                controller: phone,
                 cursorColor: Colors.pink,
                 maxLength:11 ,
                  keyboardType: TextInputType.phone,
@@ -54,10 +58,13 @@ class Textfield extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 5),
               child: TextField(
+                controller: password,
+                obscureText: true,
                 cursorColor: Colors.pink,
              //   maxLength:11 ,
                // keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
+
                   labelText: 'Enter Your Password  ',
                   helperText: 'Enter correctly',
                   hintText: 'Input a strong password',
@@ -84,6 +91,11 @@ class Textfield extends StatelessWidget {
               ),
             ),
           ),
+          
+          SizedBox(
+              height: 50,
+              width: 200,
+              child: ElevatedButton(onPressed: (){}, child: Text("Log in")))
         ],
       ),
 
