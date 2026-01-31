@@ -14,9 +14,33 @@ class Home extends StatelessWidget {
         
       ),
       body: SingleChildScrollView(
-        //scrollDirection: ,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+             children: [
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+               Text("Miel"),
+
+
+
+
+             ],
+          ),
+        )
+
+       /* Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.,
           children: [
 
@@ -55,11 +79,13 @@ class Home extends StatelessWidget {
                 fontSize: 54,
                 fontWeight: FontWeight.bold,
                 color: Colors.purple[200]
-            ),),Text("Hellow World ",style: TextStyle(
+            ),),
+            Text("Hellow World ",style: TextStyle(
                 fontSize: 54,
                 fontWeight: FontWeight.bold,
                 color: Colors.purple[200]
-            ),),Text("Hellow World ",style: TextStyle(
+            ),),
+            Text("Hellow World ",style: TextStyle(
                 fontSize: 54,
                 fontWeight: FontWeight.bold,
                 color: Colors.purple[200]
@@ -85,7 +111,7 @@ class Home extends StatelessWidget {
                 color: Colors.purple[200]
             ),),
           ],
-        ),
+        ),*/
       ),
     );
   }
