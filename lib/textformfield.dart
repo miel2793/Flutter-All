@@ -104,13 +104,20 @@ class Textfrom extends StatelessWidget {
                    ),
                     SizedBox
                       (
-                      height: 30,
+                      height: 10,
                     ),
 
                     SizedBox(
           height: 50,
                         width: 200,
-                        child: ElevatedButton(onPressed: (){
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.deepPurpleAccent,
+                            foregroundColor: Colors.black
+
+                          ),
+
+                            onPressed: (){
                           if(_formkey.currentState!.validate())
                             {
                               print(phone.text);
@@ -134,9 +141,19 @@ class Textfrom extends StatelessWidget {
                      height: 200,
                      width: 300,
                   //  color: Colors.orange,
-                     child: Image.asset('assets/images/intro_bg.png'),
-                     decoration: BoxDecoration(
-                       color: Colors.purple[200]
+                     decoration: BoxDecoration(boxShadow:
+                         [
+                           BoxShadow(
+                             color: Colors.black,
+                             blurRadius: 20,
+                             spreadRadius: 4,
+                             offset: Offset(0, 5),
+                           )
+                         ],
+                       color: Colors.orange,
+                       borderRadius: BorderRadius.circular(20),
+
+                           
                      ),
                    )
 
