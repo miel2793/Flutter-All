@@ -133,10 +133,14 @@ class Textfrom extends StatelessWidget {
                      alignment: Alignment.topRight,
                      height: 200,
                      width: 300,
-                    color: Colors.orange,
+                  //  color: Colors.orange,
                      child: Image.asset('assets/images/intro_bg.png'),
-                     
+                     decoration: BoxDecoration(
+                       color: Colors.purple[200]
+                     ),
                    )
+
+
                  ],
               ),
             ),
