@@ -126,13 +126,15 @@ class Textfrom extends StatelessWidget {
                         }, child:Text('Log in') )),
                    SizedBox
                      (
-                     height: 30,
+                     height: 10,
                    ),
                    Container(
                    //  decoration: ,
+                     alignment: Alignment.topRight,
                      height: 200,
                      width: 300,
                     color: Colors.orange,
+                     child: Image.asset('assets/images/intro_bg.png'),
                      
                    )
                  ],
