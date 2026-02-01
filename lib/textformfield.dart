@@ -123,7 +123,18 @@ class Textfrom extends StatelessWidget {
 
 
 
-                        }, child:Text('Log in') ))
+                        }, child:Text('Log in') )),
+                   SizedBox
+                     (
+                     height: 30,
+                   ),
+                   Container(
+                   //  decoration: ,
+                     height: 200,
+                     width: 300,
+                    color: Colors.orange,
+                     
+                   )
                  ],
               ),
             ),
