@@ -107,8 +107,13 @@ class Textfield extends StatelessWidget {
                   password.clear();
         
                 }, child: Text("Log in"))),
+            SizedBox(
+              height: 20,
+            ),
 
-          //  Image.asset('assets/images/intro_bg.png',height: double.infinity,),
+            SizedBox(
+                child: Image.asset('assets/images/intro_bg.png')),
+            Image.network('https://cdn.ostad.app/public/upload/2025-09-20T12-29-07.895Z-Screenshot_28.png'),
           ],
         ),
       ),
