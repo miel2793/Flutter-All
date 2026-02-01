@@ -115,13 +115,14 @@ class Textfrom extends StatelessWidget {
                             {
                               print(phone.text);
                               print(pass.text);
+                              phone.clear();
+
+                              pass.clear();
 
                             }
 
 
-                          phone.clear();
 
-                          pass.clear();
                         }, child:Text('Log in') ))
                  ],
               ),
