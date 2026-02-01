@@ -4,6 +4,8 @@ class Textfrom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController phone =TextEditingController();
+    TextEditingController pass =TextEditingController();
     return Scaffold(
        appBar: AppBar(
          title: Text("TextFormField"),
@@ -27,6 +29,7 @@ class Textfrom extends StatelessWidget {
                  Padding(
                    padding: const EdgeInsets.only(right: 30,left:30,top: 20,bottom: 0),
                    child: TextFormField(
+                     controller: phone,
                      maxLength: 11,
                      keyboardType:TextInputType.phone,
                      decoration: InputDecoration(
@@ -47,11 +50,12 @@ class Textfrom extends StatelessWidget {
                  Padding(
                    padding: const EdgeInsets.only(right: 30,left:30,top: 20,bottom: 0),
                    child: TextFormField(
+                     controller:  pass,
                      obscureText: true,
                     // keyboardType:TextInputType.phone,
                      decoration: InputDecoration(
-                         prefixIcon: Icon(Icons.phone),
-                         suffixIcon: Icon(Icons.check),
+                         prefixIcon: Icon(Icons.password),
+                         suffixIcon: Icon(Icons.lock),
                          labelText: "Enter A Password",
                          hintText: 'M#*^342',
                          helperText: 'Give a Strong  Password',
@@ -62,7 +66,22 @@ class Textfrom extends StatelessWidget {
                      ),
 
                    ),
-                 )
+                 ),
+                  SizedBox
+                    (
+                    height: 30,
+                  ),
+                 
+                  SizedBox(
+height: 50,
+                      width: 200,
+                      child: ElevatedButton(onPressed: (){
+
+                        print(phone.text);
+                        phone.clear();
+                        print(pass.text);
+                        pass.clear();
+                      }, child:Text('Log in') ))
                ],
             ),
           ),
