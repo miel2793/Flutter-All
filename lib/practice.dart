@@ -20,41 +20,72 @@ class All extends StatelessWidget {
         padding: EdgeInsets.all(15),
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  height: 150,
-                  width: 150,
-                  decoration: BoxDecoration(
-                    color: Colors.deepPurple,
-                    borderRadius: BorderRadius.circular(10)
-
-                  ),
-                 
-
-                ),
-                SizedBox(
-                  width: 50,
-
-                ),
-
-                Container(
-                  height: 150,
-                  width: 150,
-                  decoration: BoxDecoration(
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 150,
+                    decoration: BoxDecoration(
                       color: Colors.deepPurple,
                       borderRadius: BorderRadius.circular(10)
 
+                    ),
+
+
+                  ),
+                  SizedBox(
+                    width: 50,
+
+                  ),
+
+                  Container(
+                    height: 150,
+                    width: 150,
+                    decoration: BoxDecoration(
+                        color: Colors.deepPurple,
+                        borderRadius: BorderRadius.circular(10)
+
+                    ),
+
+
                   ),
 
 
-                ),
 
-                
-              ],
-              
+
+                ],
+
+              ),
             ),
-            Text("This Color Name Is Purple")
+            SizedBox(
+              height: 20,
+            )
+            ,
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 15),
+                  child: Container(
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                     // boxShadow:,
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Text(
+                      "This Is Purple Color",
+                      style: TextStyle(
+                        color: Colors.purple,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 10,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            )
 
           ],
 
