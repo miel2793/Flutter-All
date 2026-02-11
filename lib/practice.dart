@@ -23,17 +23,136 @@ class All extends StatelessWidget {
               
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 15,left: 10),
+                  padding: const EdgeInsets.only(top: 10,left: 10,bottom: 15),
                   child: Container(
                     height: 90,
                     width: 90,
 
-                    decoration: BoxDecoration(
-                       color: Colors.red
+                    decoration:
+                    BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                       color: Colors.red[900],
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 7,
+                          offset: Offset(5, 5),
+                        ),
+                      ],
+
 
                     ),
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10,left: 10,bottom: 15),
+                  child: Container(
+                    height: 90,
+                    width: 90,
+
+                    decoration:
+                    BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                      color: Colors.red[800],
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 7,
+                          offset: Offset(5, 5),
+                        ),
+                      ],
+
+
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10,left: 10,bottom: 15),
+                  child: Container(
+                    height: 90,
+                    width: 90,
+
+                    decoration:
+                    BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                      color: Colors.red[700],
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 7,
+                          offset: Offset(5, 5),
+                        ),
+                      ],
+
+
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10,left: 10,bottom: 15),
+                  child: Container(
+                    height: 90,
+                    width: 90,
+
+                    decoration:
+                    BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                      color: Colors.red[600],
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 7,
+                          offset: Offset(5, 5),
+                        ),
+                      ],
+
+
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10,left: 10,bottom: 15),
+                  child: Container(
+                    height: 90,
+                    width: 90,
+
+                    decoration:
+                    BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 7,
+                          offset: Offset(5, 5),
+                        ),
+                      ],
+
+
+                    ),
+                  ),
+                ),
+
 
               ],
             ),
