@@ -23,75 +23,15 @@ class All extends StatelessWidget {
               
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
+                  padding: const EdgeInsets.only(top: 15,left: 10),
                   child: Container(
                     height: 90,
                     width: 90,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    color: Colors.black,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8,left: 10),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    color: Colors.black,
+
+                    decoration: BoxDecoration(
+                       color: Colors.red
+
+                    ),
                   ),
                 ),
 
