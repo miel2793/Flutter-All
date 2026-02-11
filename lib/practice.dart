@@ -358,6 +358,77 @@ class All extends StatelessWidget {
             ),
           ),
         ),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: List.generate(
+              10,
+                  (index) {
+                // green shades: 900 → 50
+                final shade = (900 - index * 100).clamp(50, 900);
+
+                return Padding(
+                  padding: const EdgeInsets.only(top: 10, left: 10, bottom: 15),
+                  child: Container(
+                    height: 90,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                      color: Colors.orange[shade],
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 7,
+                          offset: Offset(5, 5),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: List.generate(
+                  10,
+                      (index) {
+                    // green shades: 900 → 50
+                    final shade = (900 - index * 100).clamp(50, 900);
+
+                    return Padding(
+                      padding: const EdgeInsets.only(top: 10, left: 10, bottom: 15),
+                      child: Container(
+                        height: 90,
+                        width: 90,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 1,
+                          ),
+                          color: Colors.orange[shade],
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Colors.black,
+                              blurRadius: 7,
+                              offset: Offset(5, 5),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+
 
 
 
