@@ -256,6 +256,32 @@ class All extends StatelessWidget {
                     ),
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10,left: 10,bottom: 15),
+                  child: Container(
+                    height: 90,
+                    width: 90,
+
+                    decoration:
+                    BoxDecoration(
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                      color: Colors.red[50],
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 7,
+                          offset: Offset(5, 5),
+                        ),
+                      ],
+
+
+                    ),
+                  ),
+                ),
 
 
               ],
