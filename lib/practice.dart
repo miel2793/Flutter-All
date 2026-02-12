@@ -539,7 +539,7 @@ class All extends StatelessWidget {
                 children: List.generate(
                   10,
                       (index) {
-                    // green shades: 900 → 50
+                    // green shades: 900 → 50 SingleChildScrollView(
                     final shade = (900 - index * 100).clamp(50, 900);
 
                     return Padding(
